@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
+    <meta name="color-scheme" content="Light">
     <title>eg_demojs</title>
     <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -11,13 +11,16 @@
     <main>
         <h1>Play a Game</h1>
         <div class="inputs">
-            <!-- <button onclick="flipCoin('heads')">Heads</button> -->
-            <!-- <button onclick="flipCoin('tails')">Tails</button> -->
-            <!-- <button onclick="flipCoin()">Flip Coin</button> -->
+            <button onclick="flipCoin('Heads')">Heads</button>
+            <button onclick="flipCoin('Tails')">Tails</button>
+            <button onclick="flipCoin()">Flip Coin</button>
         </div>
         <p>You chose: <span id="choice">_</span></p>
         <p>The coin came up: <span id="flip">_</span></p>
         <p>You: <span id="result">_</span></p>
+        <div class="history">
+            <p> Played: </p>
+        </div>
     </main>
     <script src="js/logic.js"></script>
 </body>

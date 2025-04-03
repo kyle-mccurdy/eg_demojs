@@ -68,12 +68,19 @@
 //     console.log(randNum);
 // }
 
+let gamesPlayed = 0;
+let gamesWon = 0;
+let gamesLost = 0;
+
+let displayWon = document.getElementById('won');
+    let displayLost = document.getElementById('lost');
+    let displayGames = document.getElementById('played');
+
 function flipCoin() {
     let pick = x; 
     let flip = document.getElemementById('flip');
     let choice = document.getElemementById('choice');
     let result = document.getElemementById('result');
-
 
   let result = document.getElementById('flip');
 
@@ -81,24 +88,38 @@ function flipCoin() {
 
   let face;
 
-  if (randNum = 1) {
+  if (randNum == 1) {
     face = "Heads";
   } else {
     face = "Tails";
   }
   let status
-  if (flip = choice) {
-    status = "Win";
+  if (pick == toss) {
+    status = "Won";
+    gamesWon = gamesWon + 1;
  } else {
-    status = "Loss";
+    status = "Lost";
+    gamesLost = gamesLost + 1;
  }
 
+
+gamesPlayed++
+
   result.innerText = face;
-
   choice.innerText = pick;
-
   result.innerText = status;
 
   console.log(randNum);
 
+}
+displayWon.innerText = gamesWon;
+
+function resetScore {
+  gamesPlayed = 0;
+  gamesWon = 0;
+  gamesLost = 0;
+
+  displayPlayed.innertext = gamesPlayed;
+  displayWon.innerText = gamesWon;
+  displayLost.innerText = gamesLost;
 }
