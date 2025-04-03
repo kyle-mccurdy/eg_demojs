@@ -1,3 +1,9 @@
+// // declares global variables accessible outside a function
+// let gamesPlayed = 0;
+// let gamesWon = 0;
+// let gamesLost = 0;
+
+// main gameplay function
 function flipCoin(x) {
     let pick = x; // pick is set to the passed-in parameter (from html)
     let choice = document.getElementById('choice'); // to show player choice
@@ -18,15 +24,38 @@ function flipCoin(x) {
     let status; // to hold the result of the guess
     if (pick === toss ) {
         status = "Won";
+        // gamesWon++; // increments win counter
     } else {
         status = 'Lost';
+        // gamesLost++; // increments loss counter
     }
 
-    // read-outs of all the results
+    // gamesPlayed++; // increments games count
+
+    // read-outs of the game results
     choice.innerText = pick;
     flip.innerText = toss;
     result.innerText = status;
+
+    // // updates game history
+    // displayPlayed.innerText = gamesPlayed;
+    // displayWon.innerText = gamesWon;
+    // displayLost.innerText = gamesLost;
 }
+
+// // resets the scoreboard, invoked from onclick in html
+// function resetScore() {
+
+//     // resets the score
+//     gamesPlayed = 0;
+//     gamesWon = 0;
+//     gamesLost = 0;
+
+//     // updates the display
+//     displayPlayed.innerText = gamesPlayed;
+//     displayWon.innerText = gamesWon;
+//     displayLost.innerText = gamesLost;    
+// }
 
 // // Shows how to pass a paremeter
 // function flipCoin(pick) {

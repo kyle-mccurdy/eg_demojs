@@ -15,9 +15,19 @@
             <button onclick="flipCoin('Tails')">Tails</button>
             <!-- <button onclick="flipCoin()">Flip Coin</button> -->
         </div>
-        <p>You chose: <span id="choice">_</span></p>
-        <p>The coin came up: <span id="flip">_</span></p>
-        <p>You: <span id="result">_</span></p>
+        <section class="flex">
+            <div class="current">
+                <p>You chose: <span id="choice">_</span></p>
+                <p>The coin came up: <span id="flip">_</span></p>
+                <p>You: <span id="result">_</span></p>
+            </div>
+            <!-- <div class="history">
+                <p>Played: <span id="played">_</span></p>
+                <p>Won: <span id="won">_</span></p>
+                <p>Lost: <span id="lost">_</span></p>
+                <button onclick="resetScore()">Clear</button>
+            </div> -->
+        </section>
     </main>
     <script src="js/logic.js"></script>
 </body>

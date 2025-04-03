@@ -6,13 +6,12 @@ body {
     font-size: 1.5rem;
 }
 main {
-    width: 30vw;
-    height: 50vh;
+    width: 75vw;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 .inputs {
     display: flex;
@@ -28,4 +27,13 @@ button {
 span {
     font-size: 150%;
     font-weight: bold;
+}
+.flex {
+    display: flex;
+    gap: 2rem;
+}
+.current, .history {
+    border: 2px solid #ccc;
+    padding: 1rem 2rem;
+    width: 400px;
 }
