@@ -67,3 +67,38 @@
 //     // logs randNum in the console (browser inspector)
 //     console.log(randNum);
 // }
+
+function flipCoin() {
+    let pick = x; 
+    let flip = document.getElemementById('flip');
+    let choice = document.getElemementById('choice');
+    let result = document.getElemementById('result');
+
+
+  let result = document.getElementById('flip');
+
+  let randNum = Math.ceil((Math.random)*2);
+
+  let face;
+
+  if (randNum = 1) {
+    face = "Heads";
+  } else {
+    face = "Tails";
+  }
+  let status
+  if (flip = choice) {
+    status = "Win";
+ } else {
+    status = "Loss";
+ }
+
+  result.innerText = face;
+
+  choice.innerText = pick;
+
+  result.innerText = status;
+
+  console.log(randNum);
+
+}
